@@ -457,7 +457,11 @@ def generate_pertanyaan(confirmed_state):
 
 def semua_terkonfirmasi(state):
     return all(state.values())
-
+    
+@app.route("/")
+def home():
+    return render_template("chat.html")  # serve chat.html dari folder templates
+    
 @app.route("/chatbot", methods=["POST"])
 def chatbot():
     data = request.json
