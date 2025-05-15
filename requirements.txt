@@ -1,0 +1,6 @@
+os
+flask
+torch
+transformers
+openai
+requests
